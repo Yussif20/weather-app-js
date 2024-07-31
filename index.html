@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="search-bar">
+        <div class="input">
+          <input
+            class="city-name"
+            type="text"
+            name="city"
+            placeholder="Enter Location"
+          />
+          <label for="city"></label>
+        </div>
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="weather-app__icon">
+        <!-- <i class="fa-solid fa-sun" style="color: #ffd43b"></i> -->
+        <!-- <i class="fa-regular fa-cloud-sun" style="color: #ffd43b"></i> -->
+        <!-- <i class="fa-solid fa-cloud" style="color: #7d8c97"></i> -->
+        <!-- <i class="fa-regular fa-cloud-rain" style="color: #d0d1d2"></i> -->
+        <!-- Sun Icon -->
+        <!-- Sun Icon -->
+        <i class="fas fa-sun icon sun"></i>
+        <!-- Cloudy Sun Icon -->
+        <i class="fas fa-cloud-sun icon cloudy-sun"></i>
+        <!-- Cloudy Icon -->
+        <i class="fas fa-cloud icon cloudy"></i>
+        <!-- Cloudy with Rain Icon -->
+        <i class="fas fa-cloud-showers-heavy icon cloudy-rain"></i>
+      </div>
+      <p class="temp">7C</p>
+      <p class="city">Cairo</p>
+      <div class="weather__subtext">
+        <div class="item">
+          <i class="fa-solid fa-water" style="color: #ffffff"></i>
+          <p>
+            <span class="measure">48%</span><span class="type">Humidity</span>
+          </p>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-wind" style="color: #ffffff"></i>
+          <p>
+            <span class="measure">10Km/h</span
+            ><span class="type">wind speed</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

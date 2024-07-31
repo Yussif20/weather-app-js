@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #b3e5fc,
+    #81d4fa,
+    #4fc3f7,
+    #29b6f6,
+    #03a9f4
+  );
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.weather-app {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  .search-bar {
+    display: flex;
+    gap: 2rem;
+    .city-name {
+      background-color: white;
+      padding: 1.6rem 3.2rem;
+      border-radius: 4rem;
+      border: none;
+      outline: none;
+    }
+    button {
+      cursor: pointer;
+      padding: 1rem 1.8rem;
+      border: none;
+      border-radius: 50%;
+      &:hover {
+        background-color: lightgray;
+      }
+      i {
+        color: grey;
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+    }
+  }
+  .weather-app__icon {
+    .icon {
+      font-size: 50px;
+      margin: 10px;
+    }
+    .sun {
+      color: #fbc02d; /* Gold */
+    }
+    .cloudy-sun {
+      color: #90a4ae; /* Light Gray for cloud */
+    }
+    .cloudy {
+      color: #90a4ae; /* Light Gray */
+    }
+    .cloudy-rain {
+      color: #039be5;
+    }
+  }
+  .temp {
+    font-size: 7rem;
+    font-weight: semi-bold;
+  }
+  .city {
+    font-size: 5rem;
+  }
+  .weather__subtext {
+    margin-top: 4rem;
+    display: flex;
+    gap: 7rem;
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      i {
+        font-size: 7rem;
+      }
+      p {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+      }
+    }
+  }
+}
