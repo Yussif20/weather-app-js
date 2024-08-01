@@ -35,7 +35,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 2rem;
   .search-bar {
     display: flex;
     gap: 2rem;
@@ -59,24 +59,6 @@ body {
         height: 1.2rem;
         width: 1.2rem;
       }
-    }
-  }
-  .weather-app__icon {
-    .icon {
-      font-size: 50px;
-      margin: 10px;
-    }
-    .sun {
-      color: #fbc02d; /* Gold */
-    }
-    .cloudy-sun {
-      color: #90a4ae; /* Light Gray for cloud */
-    }
-    .cloudy {
-      color: #90a4ae; /* Light Gray */
-    }
-    .cloudy-rain {
-      color: #039be5;
     }
   }
   .temp {
